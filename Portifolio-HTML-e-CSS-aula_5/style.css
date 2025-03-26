@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* background-color: #000000; */
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4) 100%),
+    linear-gradient(to top, rgba(0, 0, 0, 100) 30%, rgba(0, 0, 0, 0) 100%), url('bc.png');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: repeat-x, repeat-y; */
+    color: #F6F6F6;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-destaque{
+    color: #2d7c34;
+}
+
+.apresentacao{
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{
+    background-color: #2d7c34;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao img {
+    width: 500px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Suaviza a imagem */
+}
+
+@media screen and (max-width: 980px) {
+   /* Responsividade */
+
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 28px;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 20px;
+    }
+
+    .apresentacao img {
+        width: 80%;
+    } 
+}
